@@ -17,7 +17,7 @@
 Клонируйте репозиторий проекта на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/ваш-репозиторий/task-service.git
+git clone https://github.com/powerlord1990/task-service.git
 cd task-service
 ```
 Запуск проекта
