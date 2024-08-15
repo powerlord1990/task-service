@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-alpine
 
 WORKDIR /app
 
-COPY target/task-management-system-1.0.0-SNAPSHOT.jar /app/task-management-system.jar
+COPY target/task-service-1.0.0-SNAPSHOT.jar /app/task-service.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "task-management-system.jar"]
+ENTRYPOINT ["java", "-jar", "task-service.jar"]
