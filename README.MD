@@ -17,8 +17,8 @@
 Клонируйте репозиторий проекта на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/ваш-репозиторий/project-name.git
-cd project-name
+git clone https://github.com/powerlord1990/task-service.git
+cd task-service
 ```
 Запуск проекта
 
@@ -35,3 +35,6 @@ docker-compose up -d
 ```bash
 http://localhost:8080/swagger-ui.html
 ```
+### 4. Работа с сервисом
+
+для работы с сервисом необходимо вызвать метод register, указав данные для регистрации. Далее полученный токен передать в аутентификацию swagger. далее все сервисы будут доступны
