@@ -14,6 +14,12 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
+                  name: username
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
                   name: email
                   type: VARCHAR(255)
                   constraints:
@@ -75,16 +81,16 @@ databaseChangeLog:
                   constraints:
                     nullable: true
         - addForeignKeyConstraint:
-            baseTableName: task
+            baseTableName: tasks
             baseColumnNames: author_id
             constraintName: fk_task_author
-            referencedTableName: user
+            referencedTableName: users
             referencedColumnNames: id
             onDelete: CASCADE
         - addForeignKeyConstraint:
-            baseTableName: task
+            baseTableName: tasks
             baseColumnNames: assignee_id
             constraintName: fk_task_assignee
-            referencedTableName: user
+            referencedTableName: users
             referencedColumnNames: id
             onDelete: SET NULL
