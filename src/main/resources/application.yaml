@@ -2,10 +2,6 @@ server:
   port: 8080
 
 spring:
-  security:
-    filter:
-      dispatcher:
-        ignore: "/swagger-ui/**,/v3/api-docs/**"
   datasource:
     url: jdbc:postgresql://localhost:5432/task_db
     username: postgres
@@ -38,4 +34,4 @@ logging:
   level:
     root: INFO
     org.springframework.web: DEBUG
-    ru.company.ru.company.taskmanagementsystem: DEBUG
+    ru.company.ru.company.taskmanagement: DEBUG
